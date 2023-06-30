@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "Hash": "FNOmWQvoMx+GmGcYx343IvW9t/ru9potw5iOGnlj5GA=",
+  "Source": "Blazor.Playground.FetchData",
+  "BasePath": "_content/Blazor.Playground.FetchData",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Blazor.Playground.FetchData\\wwwroot",
+      "Source": "Blazor.Playground.FetchData",
+      "ContentRoot": "C:\\Users\\Lyon Blecher\\source\\repos\\Blazor.Playground\\Blazor.Playground.FetchData\\wwwroot\\",
+      "BasePath": "_content/Blazor.Playground.FetchData",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Lyon Blecher\\.nuget\\packages\\mudblazor\\6.3.1\\staticwebassets\\MudBlazor.min.css",
+      "SourceId": "MudBlazor",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\Lyon Blecher\\.nuget\\packages\\mudblazor\\6.3.1\\staticwebassets\\",
+      "BasePath": "_content/MudBlazor",
+      "RelativePath": "MudBlazor.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Lyon Blecher\\.nuget\\packages\\mudblazor\\6.3.1\\staticwebassets\\MudBlazor.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\Lyon Blecher\\.nuget\\packages\\mudblazor\\6.3.1\\staticwebassets\\MudBlazor.min.js",
+      "SourceId": "MudBlazor",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\Lyon Blecher\\.nuget\\packages\\mudblazor\\6.3.1\\staticwebassets\\",
+      "BasePath": "_content/MudBlazor",
+      "RelativePath": "MudBlazor.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Lyon Blecher\\.nuget\\packages\\mudblazor\\6.3.1\\staticwebassets\\MudBlazor.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\Lyon Blecher\\source\\repos\\Blazor.Playground\\Blazor.Playground.FetchData\\wwwroot\\background.png",
+      "SourceId": "Blazor.Playground.FetchData",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Lyon Blecher\\source\\repos\\Blazor.Playground\\Blazor.Playground.FetchData\\wwwroot\\",
+      "BasePath": "_content/Blazor.Playground.FetchData",
+      "RelativePath": "background.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\background.png"
+    },
+    {
+      "Identity": "C:\\Users\\Lyon Blecher\\source\\repos\\Blazor.Playground\\Blazor.Playground.FetchData\\wwwroot\\exampleJsInterop.js",
+      "SourceId": "Blazor.Playground.FetchData",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Lyon Blecher\\source\\repos\\Blazor.Playground\\Blazor.Playground.FetchData\\wwwroot\\",
+      "BasePath": "_content/Blazor.Playground.FetchData",
+      "RelativePath": "exampleJsInterop.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\exampleJsInterop.js"
+    }
+  ]
+}

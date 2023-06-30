@@ -1,0 +1,229 @@
+@page "/expand"
+@using Blazor.Playground.Modules;
+@inject IApplicationOptions appOptions
+
+<style>
+    .panel-title-selected {
+        border-radius: 5px;
+        background-color: var(--mud-palette-background);
+    }
+
+        .panel-title-selected .mud-grid-item {
+            background-color: transparent;
+        }
+
+            .panel-title-selected .mud-grid-item .mud-paper {
+                font-weight: bold;
+                background-color: transparent;
+            }
+
+</style>
+
+<MudGrid Spacing="0" Justify="Justify.Center">
+    <MudItem xs="12">
+        <MudExpansionPanels MultiExpansion="false">
+            <MudExpansionPanel Icon="@Icons.Material.Outlined.Search" IsExpandedChanged="SearchExpandedChanged" Style="background-color:transparent;border: 0px;border-radius:5px 5px 0px 0px;">
+                <TitleContent>
+                    SEARCH
+                </TitleContent>
+                <ChildContent>
+                    <MudGrid Justify="Justify.FlexStart" Class="align-center">
+                        <MudItem xs="1">
+                            <MudSelect T="string" Label="Filter by:" AnchorOrigin="Origin.BottomCenter" @bind-Value="SearchTextFilter">
+                                <MudSelectItem  Value="@("FirstName")" />
+                                <MudSelectItem Value="@("LastName")" />
+                                <MudSelectItem Value="@("IdNumber")" />
+                                <MudSelectItem Value="@("Email")" />
+                            </MudSelect>
+                        </MudItem>
+                        <MudItem xs="3">
+                            <MudTextField @bind-Value="SearchTextValue " Label="Search" Variant="Variant.Text" @ref="searchTextReference" T="string"></MudTextField>
+                        </MudItem>
+                        <MudItem xs="1">
+                            <MudButton OnClick="@((e) => SubmitSearch())" Variant="Variant.Filled" Color="Color.Primary">Search</MudButton>
+                        </MudItem>
+                    </MudGrid>
+                </ChildContent>
+            </MudExpansionPanel>
+            <MudExpansionPanel class="py-0" Disabled="true" Icon="@(appOptions.InternalBreadCrumbs.Last().Icon)" Style="background-color: var(--mud-palette-primary)">
+                <TitleContent>
+                    <MudGrid Spacing="0" Style="color:var(--mud-palette-white) !important">
+                        <MudItem xs="2" Class="d-flex align-center">
+                            <MudText Typo="Typo.overline">FIRST NAME</MudText>
+                            <MudIconButton OnClick="@( (e) => SortGridByProperty("FirstName"))" Icon="@_sort["FirstName"].Icon" Style="color: var(--mud-palette-white);padding-left:10px;font-size:2rem" />
+                        </MudItem>
+                        <MudItem xs="2">
+                            <MudText Typo="Typo.overline">LAST NAME</MudText>
+                            <MudIconButton OnClick="@( (e) => SortGridByProperty("LastName"))" Icon="@_sort["LastName"].Icon" Style="color: var(--mud-palette-white);padding-left:10px;font-size:2rem" />
+                        </MudItem>
+                        <MudItem xs="2">
+                            <MudText Typo="Typo.overline">ID NUMBER</MudText>
+                            <MudIconButton OnClick="@( (e) => SortGridByProperty("IdNumber"))" Icon="@_sort["IdNumber"].Icon" Style="color: var(--mud-palette-white);padding-left:10px;font-size:2rem" />
+                        </MudItem>
+                        <MudItem xs="2">
+                            <MudText Typo="Typo.overline">EMAIL</MudText>
+                            <MudIconButton OnClick="@( (e) => SortGridByProperty("Email"))" Icon="@_sort["Email"].Icon" Style="color: var(--mud-palette-white);padding-left:10px;font-size:2rem" />
+                        </MudItem>
+                        <MudItem xs="2">
+                            <MudText Typo="Typo.overline">AGE</MudText>
+                        </MudItem>
+                        <MudItem xs="2">
+                        </MudItem>
+                    </MudGrid>
+                </TitleContent>
+                <ChildContent />
+            </MudExpansionPanel>
+
+            @foreach (var item in users)
+            {
+                <MudExpansionPanel @ref="@(_panels[item.Id].Panel)" IsExpandedChanged="@((b) => GridPanelExpandedChanged(b, item))">
+                    <TitleContent>
+                        <MudGrid Spacing="0" @ref="@(_panels[item.Id].Title)">
+                            <MudItem xs="2">
+                                <MudPaper Class="d-flex mud-width-full py-4 pl-2" Square="true" Elevation="0">@item.FirstName</MudPaper>
+                            </MudItem>
+                            <MudItem xs="2">
+                                <MudPaper Class="d-flex mud-width-full py-4 pl-2" Square="true" Elevation="0">@item.LastName</MudPaper>
+                            </MudItem>
+                            <MudItem xs="2">
+                                <MudPaper Class="d-flex mud-width-full py-4 pl-2" Square="true" Elevation="0">@item.IdNumber</MudPaper>
+                            </MudItem>
+                            <MudItem xs="2">
+                                <MudPaper Class="d-flex mud-width-full py-4 pl-2" Square="true" Elevation="0">@item.Email</MudPaper>
+                            </MudItem>
+                            <MudItem xs="2">
+                                <MudPaper Class="d-flex mud-width-full py-4 pl-2" Square="true" Elevation="0">@item.Age</MudPaper>
+                            </MudItem>
+                            <MudItem xs="2" Class="d-flex justify-end">
+                                <MudPaper Class="pl-3" Square="true" Elevation="0">
+                                    <MudIconButton Icon="@Icons.Material.Filled.Delete" aria-label="delete"></MudIconButton>
+                                </MudPaper>
+                            </MudItem>
+                        </MudGrid>
+                    </TitleContent>
+                    <ChildContent>
+                        <MudTabs Elevation="3" Rounded="true" ApplyEffectsToContainer="true" PanelClass="pa-6" Style="min-height:400px;background-color:var(--mud-palette-surface);">
+                            <MudTabPanel Text="User Details">
+                                <MudText>User Details</MudText>
+                            </MudTabPanel>
+                            <MudTabPanel Text="Roles & Functions">
+                                <MudText><Functions /></MudText>
+                            </MudTabPanel>
+                            <MudTabPanel Text="Audit Log">
+                                <MudText>Audit Log</MudText>
+                            </MudTabPanel>
+                        </MudTabs>
+                    </ChildContent>
+                </MudExpansionPanel>
+            }
+
+        </MudExpansionPanels>
+    </MudItem>
+    <MudItem xs="12">
+        <MudPagination Class="d-flex align-center justify-center pa-4" Color="Color.Primary" Count="4" @bind-Selected="@_selected" />
+    </MudItem>
+</MudGrid>
+
+@code {
+    private MudTextField<string> searchTextReference;
+    private string SearchTextValue { get; set; } = "";
+    private string SearchTextFilter { get; set; } = "";
+    private int _selected = 1;
+    private Dictionary<Guid, PanelReference> _panels = new();
+    private Dictionary<string, Sort> _sort = new();
+
+    private readonly List<User> users = new()
+    {
+        new User(Guid.Parse("e2fcb560-a354-4386-a0a1-a14a8e7b978f"), "Lyon", "Blecher", "7808015213084", "lyon@revix.com", 45),
+        new User(Guid.Parse("e6774623-e84e-41a4-b356-1fac21d58c65"), "John", "Smith", "23345345345", "john@revix.com", 30),
+        new User(Guid.Parse("ca0625b4-cede-442e-9bb6-a93c4c2d0540"), "Simon", "Jones", "345345345345", "simon@revix.com", 25),
+        new User(Guid.Parse("61b41a9c-923c-4fc0-8788-142f235f9e77"), "Paul", "Micheals", "345345345", "paul@revix.com", 31),
+        new User(Guid.Parse("de3dc0d3-5812-4593-a1a7-2893828b986d"), "Henry", "Simons", "345345345", "henry@revix.com", 19)
+    };
+
+    protected override void OnInitialized()
+    {
+        InitialiseSort();
+        InitialisePanels();
+
+        base.OnInitialized();
+    }
+
+    private void InitialisePanels()
+    {
+        foreach (var user in users)
+        {
+            _panels.Add(user.Id, new PanelReference());
+        }
+    }
+
+    private void InitialiseSort()
+    {
+        _sort.Add("FirstName", new Sort());
+        _sort.Add("LastName", new Sort());
+        _sort.Add("IdNumber", new Sort());
+        _sort.Add("Email", new Sort());
+    }
+
+    private async Task SortGridByProperty(string property)
+    {
+        _sort[property].Direction = _sort[property].Direction == SortDirection.Down ? SortDirection.Up : SortDirection.Down;
+        _sort[property].Icon = _sort[property].Direction == SortDirection.Down ? Icons.Material.Outlined.ArrowCircleDown : Icons.Material.Outlined.ArrowCircleUp;
+    }
+
+    private async Task SearchExpandedChanged(bool expanded)
+    {
+        if (expanded)
+        {
+            SearchTextFilter = "FirstName";
+            await searchTextReference.FocusAsync();
+
+            return;
+        }
+
+        searchTextReference.Class = "";
+    }
+
+    private async Task SubmitSearch()
+    {
+        Console.WriteLine(SearchTextFilter + ":" + SearchTextValue);
+    }
+
+    //Fix this
+    private Task GridPanelExpandedChanged(bool ev, User user)
+    {
+        if (ev)
+        {
+            _panels[user.Id].Panel.Style = "background-color:var(--mud-palette-action-disabled);";
+            _panels[user.Id].Title.Class = "panel-title-selected";
+        }
+        else
+        {
+            _panels[user.Id].Panel.Style = "";
+            _panels[user.Id].Title.Class = "";
+        }
+
+        return Task.CompletedTask;
+    }
+
+    public class PanelReference
+    {
+        public MudExpansionPanel? Panel { get; set; }
+        public MudGrid? Title { get; set; }
+    }
+
+    public class Sort
+    {
+        public SortDirection Direction { get; set; } = SortDirection.Down;
+        public string Icon { get; set; } = Icons.Material.Outlined.ArrowCircleDown;
+        public string IconColor { get; set; } = "var(--mud-palette-white)";
+    }
+
+    public enum SortDirection
+    {
+        Up,
+        Down
+    }
+
+    public record User(Guid Id, string FirstName, string LastName, string IdNumber, string Email, int Age);
+}

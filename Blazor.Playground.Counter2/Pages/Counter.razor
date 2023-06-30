@@ -1,0 +1,75 @@
+﻿@page "/counter"
+
+<MudExpansionPanels MultiExpansion="true">
+    <MudExpansionPanel>
+        <TitleContent>
+            <MudPaper Class="d-flex align-start flex-grow-1 gap-4" Elevation="0">
+                <MudPaper Class="py-4 d-flex flex-1 pa-4" Elevation="0">Administrator</MudPaper>
+            </MudPaper>
+        </TitleContent>
+        <ChildContent>
+            <MudTabs Elevation="3" Rounded="true" ApplyEffectsToContainer="true" PanelClass="pa-6">
+                <MudTabPanel Text="User Details">
+                    <MudText>Role Details</MudText>
+                </MudTabPanel>
+                <MudTabPanel Text="Functions">
+                    <MudText>
+                        <Functions />
+                    </MudText>
+                </MudTabPanel>
+                <MudTabPanel Text="Assigned Users">
+                    <MudText>Assigned Users</MudText>
+                </MudTabPanel>
+            </MudTabs>
+        </ChildContent>
+    </MudExpansionPanel>
+    <MudExpansionPanel>
+        <TitleContent>
+            <MudPaper Class="d-flex align-start flex-grow-1 gap-4" Elevation="0">
+                <MudPaper Class="py-4 d-flex flex-1 pa-4" Elevation="0">Operations</MudPaper>
+            </MudPaper>
+        </TitleContent>
+        <ChildContent>
+            <MudTabs Elevation="3" Rounded="true" ApplyEffectsToContainer="true" PanelClass="pa-6">
+                <MudTabPanel Text="User Details">
+                    <MudText>Role Details</MudText>
+                </MudTabPanel>
+                <MudTabPanel Text="Functions">
+                    <MudText>
+                        <Functions />
+                    </MudText>
+                </MudTabPanel>
+                <MudTabPanel Text="Assigned Users">
+                    <MudText>Assigned Users</MudText>
+                </MudTabPanel>
+            </MudTabs>
+        </ChildContent>
+    </MudExpansionPanel>
+    <MudExpansionPanel>
+        <TitleContent>
+            <MudPaper Class="d-flex align-start flex-grow-1 gap-4" Elevation="0">
+                <MudPaper Class="py-4 d-flex flex-1 pa-4" Elevation="0">Marketing</MudPaper>
+            </MudPaper>
+        </TitleContent>
+        <ChildContent>
+            <MudTabs Elevation="3" Rounded="true" ApplyEffectsToContainer="true" PanelClass="pa-6">
+                <MudTabPanel Text="User Details">
+                    <MudText>Role Details</MudText>
+                </MudTabPanel>
+                <MudTabPanel Text="Functions">
+                    <MudText>
+                        <Functions />
+                    </MudText>
+                </MudTabPanel>
+                <MudTabPanel Text="Assigned Users">
+                    <MudText>Assigned Users</MudText>
+                </MudTabPanel>
+            </MudTabs>
+        </ChildContent>
+    </MudExpansionPanel>
+</MudExpansionPanels>
+
+@code
+{
+    bool isOpen;
+}

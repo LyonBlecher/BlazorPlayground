@@ -1,0 +1,97 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Lyon Blecher\\source\\repos\\Blazor.Playground\\Blazor.Playground\\bin\\Debug\\net6.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "C:\\Users\\Lyon Blecher\\source\\repos\\Blazor.Playground\\Blazor.Playground\\obj\\Debug\\net6.0\\build-gz\\PZ4d38Ea.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "C:\\Users\\Lyon Blecher\\source\\repos\\Blazor.Playground\\Blazor.Playground\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Blazor.Playground.styles.css",
+      "PackagePath": "staticwebassets\\Blazor.Playground.styles.css"
+    },
+    {
+      "Id": "C:\\Users\\Lyon Blecher\\source\\repos\\Blazor.Playground\\Blazor.Playground\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\Lyon Blecher\\source\\repos\\Blazor.Playground\\Blazor.Playground\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Lyon Blecher\\source\\repos\\Blazor.Playground\\Blazor.Playground\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Lyon Blecher\\source\\repos\\Blazor.Playground\\Blazor.Playground\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "C:\\Users\\Lyon Blecher\\source\\repos\\Blazor.Playground\\Blazor.Playground\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "C:\\Users\\Lyon Blecher\\source\\repos\\Blazor.Playground\\Blazor.Playground\\wwwroot\\css\\open-iconic\\README.md",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\README.md"
+    },
+    {
+      "Id": "C:\\Users\\Lyon Blecher\\source\\repos\\Blazor.Playground\\Blazor.Playground\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Lyon Blecher\\source\\repos\\Blazor.Playground\\Blazor.Playground\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
+    },
+    {
+      "Id": "C:\\Users\\Lyon Blecher\\source\\repos\\Blazor.Playground\\Blazor.Playground\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
+    },
+    {
+      "Id": "C:\\Users\\Lyon Blecher\\source\\repos\\Blazor.Playground\\Blazor.Playground\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
+    },
+    {
+      "Id": "C:\\Users\\Lyon Blecher\\source\\repos\\Blazor.Playground\\Blazor.Playground\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Lyon Blecher\\source\\repos\\Blazor.Playground\\Blazor.Playground\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
+    },
+    {
+      "Id": "C:\\Users\\Lyon Blecher\\source\\repos\\Blazor.Playground\\Blazor.Playground\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Lyon Blecher\\source\\repos\\Blazor.Playground\\Blazor.Playground\\wwwroot\\icon-192.png",
+      "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "C:\\Users\\Lyon Blecher\\source\\repos\\Blazor.Playground\\Blazor.Playground\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\Lyon Blecher\\source\\repos\\Blazor.Playground\\Blazor.Playground\\wwwroot\\sample-data\\weather.json",
+      "PackagePath": "staticwebassets\\sample-data\\weather.json"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Blazor.Playground.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.Blazor.Playground.props",
+      "PackagePath": "build\\Blazor.Playground.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.Blazor.Playground.props",
+      "PackagePath": "buildMultiTargeting\\Blazor.Playground.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.Blazor.Playground.props",
+      "PackagePath": "buildTransitive\\Blazor.Playground.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

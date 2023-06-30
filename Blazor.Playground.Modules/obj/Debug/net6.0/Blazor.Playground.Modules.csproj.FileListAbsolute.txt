@@ -1,0 +1,12 @@
+C:\Users\Lyon Blecher\source\repos\Blazor.Playground\Blazor.Playground.Modules\bin\Debug\net6.0\Blazor.Playground.Modules.deps.json
+C:\Users\Lyon Blecher\source\repos\Blazor.Playground\Blazor.Playground.Modules\bin\Debug\net6.0\Blazor.Playground.Modules.dll
+C:\Users\Lyon Blecher\source\repos\Blazor.Playground\Blazor.Playground.Modules\bin\Debug\net6.0\Blazor.Playground.Modules.pdb
+C:\Users\Lyon Blecher\source\repos\Blazor.Playground\Blazor.Playground.Modules\obj\Debug\net6.0\Blazor.Playground.Modules.csproj.AssemblyReference.cache
+C:\Users\Lyon Blecher\source\repos\Blazor.Playground\Blazor.Playground.Modules\obj\Debug\net6.0\Blazor.Playground.Modules.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lyon Blecher\source\repos\Blazor.Playground\Blazor.Playground.Modules\obj\Debug\net6.0\Blazor.Playground.Modules.AssemblyInfoInputs.cache
+C:\Users\Lyon Blecher\source\repos\Blazor.Playground\Blazor.Playground.Modules\obj\Debug\net6.0\Blazor.Playground.Modules.AssemblyInfo.cs
+C:\Users\Lyon Blecher\source\repos\Blazor.Playground\Blazor.Playground.Modules\obj\Debug\net6.0\Blazor.Playground.Modules.csproj.CoreCompileInputs.cache
+C:\Users\Lyon Blecher\source\repos\Blazor.Playground\Blazor.Playground.Modules\obj\Debug\net6.0\Blazor.Playground.Modules.dll
+C:\Users\Lyon Blecher\source\repos\Blazor.Playground\Blazor.Playground.Modules\obj\Debug\net6.0\refint\Blazor.Playground.Modules.dll
+C:\Users\Lyon Blecher\source\repos\Blazor.Playground\Blazor.Playground.Modules\obj\Debug\net6.0\Blazor.Playground.Modules.pdb
+C:\Users\Lyon Blecher\source\repos\Blazor.Playground\Blazor.Playground.Modules\obj\Debug\net6.0\ref\Blazor.Playground.Modules.dll

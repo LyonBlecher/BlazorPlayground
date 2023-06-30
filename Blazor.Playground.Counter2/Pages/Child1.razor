@@ -1,0 +1,85 @@
+@page "/child1"
+
+<MudGrid Spacing="0" Justify="Justify.Center">
+    <MudItem xs="12">
+        <MudExpansionPanels MultiExpansion="true">
+            <MudExpansionPanel>
+                <TitleContent>
+                    <MudPaper Class="d-flex align-start flex-grow-1 gap-4" Elevation="0">
+                        <MudPaper Class="py-4 d-flex flex-1 pa-4" Elevation="0">Lyon</MudPaper>
+                        <MudPaper Class="py-4 d-flex flex-1 pa-4" Elevation="0">Blecher</MudPaper>
+                        <MudPaper Class="py-4 d-flex flex-1 pa-4" Elevation="0">7808015213084</MudPaper>
+                        <MudPaper Class="py-4 d-flex flex-1 pa-4" Elevation="0">lyon@revix.com</MudPaper>
+                    </MudPaper>
+                </TitleContent>
+                <ChildContent>
+                    <MudTabs Elevation="3" Rounded="true" ApplyEffectsToContainer="true" PanelClass="pa-6">
+                        <MudTabPanel Text="User Details">
+                            <MudText>User Details</MudText>
+                        </MudTabPanel>
+                        <MudTabPanel Text="Roles & Functions">
+                            <MudText><Functions /></MudText>
+                        </MudTabPanel>
+                        <MudTabPanel Text="Audit Log">
+                            <MudText>Audit Log</MudText>
+                        </MudTabPanel>
+                    </MudTabs>
+                </ChildContent>
+            </MudExpansionPanel>
+            <MudExpansionPanel>
+                <TitleContent>
+                    <MudPaper Class="d-flex align-start flex-grow-1 gap-4" Elevation="0">
+                        <MudPaper Class="py-4 d-flex flex-1 pa-4" Elevation="0">John</MudPaper>
+                        <MudPaper Class="py-4 d-flex flex-1 pa-4" Elevation="0">Wick</MudPaper>
+                        <MudPaper Class="py-4 d-flex flex-1 pa-4" Elevation="0">23454356634</MudPaper>
+                        <MudPaper Class="py-4 d-flex flex-1 pa-4" Elevation="0">John@revix.com</MudPaper>
+                    </MudPaper>
+                </TitleContent>
+                <ChildContent>
+                    <MudTabs Elevation="3" Rounded="true" ApplyEffectsToContainer="true" PanelClass="pa-6">
+                        <MudTabPanel Text="User Details">
+                            <MudText>User Details</MudText>
+                        </MudTabPanel>
+                        <MudTabPanel Text="Roles & Functions">
+                            <MudText><Functions /></MudText>
+                        </MudTabPanel>
+                        <MudTabPanel Text="Audit Log">
+                            <MudText>Audit Log</MudText>
+                        </MudTabPanel>
+                    </MudTabs>
+                </ChildContent>
+            </MudExpansionPanel>
+            <MudExpansionPanel>
+                <TitleContent>
+                    <MudPaper Class="d-flex align-start flex-grow-1 gap-4" Elevation="0">
+                        <MudPaper Class="py-4 d-flex flex-1 pa-4" Elevation="0">Simon</MudPaper>
+                        <MudPaper Class="py-4 d-flex flex-1 pa-4" Elevation="0">Smith</MudPaper>
+                        <MudPaper Class="py-4 d-flex flex-1 pa-4" Elevation="0">780834534084</MudPaper>
+                        <MudPaper Class="py-4 d-flex flex-1 pa-4" Elevation="0">simon@revix.com</MudPaper>
+                    </MudPaper>
+                </TitleContent>
+                <ChildContent>
+                    <MudTabs Elevation="3" Rounded="true" ApplyEffectsToContainer="true" PanelClass="pa-6">
+                        <MudTabPanel Text="User Details">
+                            <MudText>User Details</MudText>
+                        </MudTabPanel>
+                        <MudTabPanel Text="Roles & Functions">
+                            <MudText><Functions /></MudText>
+                        </MudTabPanel>
+                        <MudTabPanel Text="Audit Log">
+                            <MudText>Audit Log</MudText>
+                        </MudTabPanel>
+                    </MudTabs>
+                </ChildContent>
+            </MudExpansionPanel>
+        </MudExpansionPanels>
+    </MudItem>
+    <MudItem xs="12">
+        <MudPagination Class="d-flex align-center justify-center pa-4" Color="Color.Primary" Count="4" @bind-Selected="@_selected" />
+    </MudItem>
+</MudGrid>
+
+@code {
+    private int _selected = 1;
+    bool isOpen;
+}

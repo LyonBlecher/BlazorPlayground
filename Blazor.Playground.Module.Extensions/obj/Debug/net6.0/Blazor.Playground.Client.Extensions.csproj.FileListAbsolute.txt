@@ -1,0 +1,15 @@
+C:\Users\Lyon Blecher\source\repos\Blazor.Playground\Blazor.Playground.Module.Extensions\bin\Debug\net6.0\Blazor.Playground.Client.Extensions.deps.json
+C:\Users\Lyon Blecher\source\repos\Blazor.Playground\Blazor.Playground.Module.Extensions\bin\Debug\net6.0\Blazor.Playground.Client.Extensions.dll
+C:\Users\Lyon Blecher\source\repos\Blazor.Playground\Blazor.Playground.Module.Extensions\bin\Debug\net6.0\Blazor.Playground.Client.Extensions.pdb
+C:\Users\Lyon Blecher\source\repos\Blazor.Playground\Blazor.Playground.Module.Extensions\bin\Debug\net6.0\Blazor.Playground.Modules.dll
+C:\Users\Lyon Blecher\source\repos\Blazor.Playground\Blazor.Playground.Module.Extensions\bin\Debug\net6.0\Blazor.Playground.Modules.pdb
+C:\Users\Lyon Blecher\source\repos\Blazor.Playground\Blazor.Playground.Module.Extensions\obj\Debug\net6.0\Blazor.Playground.Client.Extensions.csproj.AssemblyReference.cache
+C:\Users\Lyon Blecher\source\repos\Blazor.Playground\Blazor.Playground.Module.Extensions\obj\Debug\net6.0\Blazor.Playground.Client.Extensions.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lyon Blecher\source\repos\Blazor.Playground\Blazor.Playground.Module.Extensions\obj\Debug\net6.0\Blazor.Playground.Client.Extensions.AssemblyInfoInputs.cache
+C:\Users\Lyon Blecher\source\repos\Blazor.Playground\Blazor.Playground.Module.Extensions\obj\Debug\net6.0\Blazor.Playground.Client.Extensions.AssemblyInfo.cs
+C:\Users\Lyon Blecher\source\repos\Blazor.Playground\Blazor.Playground.Module.Extensions\obj\Debug\net6.0\Blazor.Playground.Client.Extensions.csproj.CoreCompileInputs.cache
+C:\Users\Lyon Blecher\source\repos\Blazor.Playground\Blazor.Playground.Module.Extensions\obj\Debug\net6.0\Blazor.Playground.Client.Extensions.csproj.CopyComplete
+C:\Users\Lyon Blecher\source\repos\Blazor.Playground\Blazor.Playground.Module.Extensions\obj\Debug\net6.0\Blazor.Playground.Client.Extensions.dll
+C:\Users\Lyon Blecher\source\repos\Blazor.Playground\Blazor.Playground.Module.Extensions\obj\Debug\net6.0\refint\Blazor.Playground.Client.Extensions.dll
+C:\Users\Lyon Blecher\source\repos\Blazor.Playground\Blazor.Playground.Module.Extensions\obj\Debug\net6.0\Blazor.Playground.Client.Extensions.pdb
+C:\Users\Lyon Blecher\source\repos\Blazor.Playground\Blazor.Playground.Module.Extensions\obj\Debug\net6.0\ref\Blazor.Playground.Client.Extensions.dll

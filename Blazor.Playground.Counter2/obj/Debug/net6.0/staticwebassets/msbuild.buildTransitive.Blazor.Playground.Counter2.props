@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Blazor.Playground.Counter2.props" />
+</Project>

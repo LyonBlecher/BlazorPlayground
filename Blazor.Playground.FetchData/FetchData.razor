@@ -1,0 +1,94 @@
+﻿@page "/fetchdata"
+@using MudBlazor;
+@inject HttpClient Http
+
+<style>
+    .selected {
+        background-color: #1E88E5 !important;
+    }
+
+        .selected > td {
+            color: white !important;
+        }
+
+            .selected > td .mud-input {
+                color: white !important;
+            }
+</style>
+
+<MudTable Items="@forecasts.Take(4)" Hover="true" Breakpoint="Breakpoint.Sm" @ref="mudTable" RowClassFunc="@SelectedRowClassFunc" OnRowClick="RowClickEvent" T="WeatherForecast">
+    <HeaderContent>
+        <MudTh>Date</MudTh>
+        <MudTh>Summary</MudTh>
+        <MudTh>Temp C</MudTh>
+        <MudTh>Temp F</MudTh>
+    </HeaderContent>
+    <RowTemplate>
+        <MudTd DataLabel="Nr">@context.Date.ToShortDateString()</MudTd>
+        <MudTd DataLabel="Sign">@context.Summary</MudTd>
+        <MudTd DataLabel="Name">@context.TemperatureC</MudTd>
+        <MudTd DataLabel="Position">@context.TemperatureF</MudTd>
+    </RowTemplate>
+</MudTable>
+<MudExpansionPanels Style="flex: 1;">
+    <MudExpansionPanel Text="Show inline-clicked event log">
+        @foreach (var message in clickedEvents)
+        {
+            <MudText>@message</MudText>
+        }
+        @if(clickedEvents.Count > 0) {
+            <div class="d-flex">
+                <MudSpacer/>
+                <MudButton Class="mt-3" ButtonType="ButtonType.Button" Variant="Variant.Filled" OnClick="@(() => clickedEvents.Clear())">Clear events</MudButton>
+            </div>
+        }
+    </MudExpansionPanel>
+</MudExpansionPanels>
+
+@code {
+    private int selectedRowNumber = -1;
+    private MudTable<WeatherForecast> mudTable;
+    private List<string> clickedEvents = new();
+    private List<WeatherForecast> forecasts = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        forecasts = await Http.GetFromJsonAsync<List<WeatherForecast>>("sample-data/weather.json");
+    }
+
+    public class WeatherForecast
+    {
+        public DateTime Date { get; set; }
+
+        public int TemperatureC { get; set; }
+
+        public string? Summary { get; set; }
+
+        public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
+    }
+
+    private void RowClickEvent(TableRowClickEventArgs<WeatherForecast> tableRowClickEventArgs)
+    {
+        clickedEvents.Add("Row has been clicked");
+    }
+
+    private string SelectedRowClassFunc(WeatherForecast element, int rowNumber)
+    {
+        if (selectedRowNumber == rowNumber)
+        {
+            selectedRowNumber = -1;
+            clickedEvents.Add("Selected Row: None");
+            return string.Empty;
+        }
+        else if (mudTable.SelectedItem != null && mudTable.SelectedItem.Equals(element))
+        {
+            selectedRowNumber = rowNumber;
+            clickedEvents.Add($"Selected Row: {rowNumber}");
+            return "selected";
+        }
+        else
+        {
+            return string.Empty;
+        }
+    }
+}

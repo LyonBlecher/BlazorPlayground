@@ -1,0 +1,6 @@
+C:\Users\Lyon Blecher\source\repos\Blazor.Playground\Blazor.Playground.Counter\obj\Debug\net6.0\Blazor.Playground.Counter.csproj.AssemblyReference.cache
+C:\Users\Lyon Blecher\source\repos\Blazor.Playground\Blazor.Playground.Counter\obj\Debug\net6.0\Blazor.Playground.Counter.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lyon Blecher\source\repos\Blazor.Playground\Blazor.Playground.Counter\obj\Debug\net6.0\Blazor.Playground.Counter.AssemblyInfoInputs.cache
+C:\Users\Lyon Blecher\source\repos\Blazor.Playground\Blazor.Playground.Counter\obj\Debug\net6.0\Blazor.Playground.Counter.AssemblyInfo.cs
+C:\Users\Lyon Blecher\source\repos\Blazor.Playground\Blazor.Playground.Counter\obj\Debug\net6.0\Blazor.Playground.Counter.csproj.CoreCompileInputs.cache
+C:\Users\Lyon Blecher\source\repos\Blazor.Playground\Blazor.Playground.Counter\obj\Debug\net6.0\Blazor.Playground.Counter.MvcApplicationPartsAssemblyInfo.cache

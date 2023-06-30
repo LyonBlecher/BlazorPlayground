@@ -1,0 +1,41 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows,browser
+build_property.RootNamespace = Blazor.Playground.Counter
+build_property.RootNamespace = Blazor.Playground.Counter
+build_property.ProjectDir = C:\Users\Lyon Blecher\source\repos\Blazor.Playground\Blazor.Playground.Counter2\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Lyon Blecher\source\repos\Blazor.Playground\Blazor.Playground.Counter2
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Lyon Blecher/source/repos/Blazor.Playground/Blazor.Playground.Counter2/Pages/Child1.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2hpbGQxLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lyon Blecher/source/repos/Blazor.Playground/Blazor.Playground.Counter2/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lyon Blecher/source/repos/Blazor.Playground/Blazor.Playground.Counter2/Pages/ExpandableGridTest.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXhwYW5kYWJsZUdyaWRUZXN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lyon Blecher/source/repos/Blazor.Playground/Blazor.Playground.Counter2/Pages/NewFile.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTmV3RmlsZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lyon Blecher/source/repos/Blazor.Playground/Blazor.Playground.Counter2/Shared/Functions.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEZ1bmN0aW9ucy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lyon Blecher/source/repos/Blazor.Playground/Blazor.Playground.Counter2/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 

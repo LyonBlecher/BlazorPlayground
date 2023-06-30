@@ -1,0 +1,71 @@
+﻿@using Blazor.Playground.Modules;
+@inject IModuleOptions moduleOptions;
+@inject IAddApplicationOptionsBreadCrumbs applicationOptions
+@inject NavigationManager navigationManager
+
+@code {
+    MenuItem dashboard = new MenuItem(Guid.Empty, 0, "Dashboard", "", @Icons.Material.Filled.Dashboard);
+}
+<MudNavMenu>
+    <MudNavLink OnClick="@((e) => ParentMenuItemClicked(dashboard))" Icon="@dashboard.Icon">@dashboard.Text</MudNavLink>
+
+    @foreach (var menuItem in moduleOptions.ModuleMenus)
+    {
+        @switch (menuItem)
+        {
+            case MenuItem standardMenuItem:
+                <MudNavLink OnClick="@((e) => ParentMenuItemClicked(standardMenuItem))" Icon="@menuItem.Icon" Match="NavLinkMatch.Prefix">@standardMenuItem.Text</MudNavLink>
+                break;
+
+            case MenuGroup menuGroup:
+                <MudNavGroup ExpandedChanged="@((expanded) => OnGroupExpaded(expanded, menuGroup.Id))" Title="@(menuGroup.Text)" Icon="@menuItem.Icon" Expanded="_expanded[menuGroup.Id]">
+
+                    @foreach (var child in menuGroup.Children)
+                    {
+                        <MudNavLink OnClick="@((e) => ChildMenuItemClicked(child, menuGroup))" Icon="@child.Icon" Match="NavLinkMatch.Prefix">@child.Text</MudNavLink>
+                    }
+
+                </MudNavGroup>
+                break;
+        }
+    }
+</MudNavMenu>
+
+@code {
+    Dictionary<Guid, bool> _expanded = new();
+
+    protected override void OnInitialized()
+    {
+        applicationOptions.AddBreadCrumb(dashboard);
+
+        foreach (var item in moduleOptions.ModuleMenus.OfType<MenuGroup>())
+        {
+            _expanded.Add(item.Id, false);
+        }
+
+        base.OnInitialized();
+    }
+
+    private void OnGroupExpaded(bool expanded, Guid menuId)
+    {
+        _expanded[menuId] = expanded;
+    }
+
+    private void ParentMenuItemClicked(MenuItem menuItem)
+    {
+        navigationManager.NavigateTo(menuItem.Route);
+
+        applicationOptions.ClearBreadCrumbs();
+        applicationOptions.AddBreadCrumb(menuItem);
+    }
+
+    private void ChildMenuItemClicked(MenuItem menuItem, MenuGroup parent)
+    {
+        navigationManager.NavigateTo(((MenuItem)menuItem).Route);
+
+        applicationOptions.ClearBreadCrumbs();
+
+        applicationOptions.AddBreadCrumb(parent);
+        applicationOptions.AddBreadCrumb(menuItem);
+    }
+}
